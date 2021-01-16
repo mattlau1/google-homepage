@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Google</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    
-    <body>
+<head>
+    <title>Google</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- adding this div because google includes it (not sure why) -->
+    <div id="viewport"> 
         <header>
-            <div class="about">
-                <p>About</p>
-            </div>
-            <div class="store">
-                <p>Store</p>
-            </div>
+            <ul class="left_header">
+                <li class="l_header_item"><a href="https://about.google/">About</a></li>
+                <li class="l_header_item"><a href="https://store.google.com/">Store</a></li>
+            </ul>
         </header>
-
-        <div class="page-center">
+    
+        <div class="page_center">
             <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
             <div class="searchbar">
                 <input class="search_input" type="text" placeholder="">
@@ -28,18 +27,19 @@
         </div>
         
         <footer>
-            <div class="left_footer">
-                <p class="advertising">Advertising</p>
-                <p class="business">Business</p>
-                <p class="how_search_works">How Search works</p>
-            </div>
-            <div class="right_footer">
-                <p class="privacy">Privacy</p>
-                <p class="terms">Terms</p>
-                <p class="settings">Settings</p>
-            </div>
+            <ul class="footer">
+                <li class="l_footer_item"><a class="footer_text">Advertising</a></li>
+                <li class="l_footer_item"><a class="footer_text">Business</a></li>
+                <li class="l_footer_item"><a class="footer_text">How Search works</a></li>
+            
+                
+                <li class="r_footer_item"><a class="footer_text">Settings</a></li>
+                <li class="r_footer_item"><a class="footer_text">Terms</a></li>
+                <li class="r_footer_item"><a class="footer_text">Privacy</a></li>
+                
+            </ul>
         </footer>
-    </body>
-
+    </div>
     
+</body>
 </html>
