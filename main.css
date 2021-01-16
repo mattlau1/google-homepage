@@ -7,7 +7,6 @@
 
 a {
     display: block;
-    padding-left: 17px;
     text-align: center;
     font-size: 13px;
     opacity: 0.75;
@@ -22,6 +21,16 @@ a {
     margin-top: 24px;
 }
 
+#l_item {
+    opacity: 1;
+    padding-left: 17px;
+}
+
+#r_item {
+    opacity: 1;
+    padding-right: 17px;
+}
+
 .l_header_item {
     display: inline;
     float: left;
@@ -30,6 +39,62 @@ a {
 
 .l_header_item:hover {
     text-decoration: underline;
+}
+
+.r_header_item {
+    display: inline;
+    float: right;
+    text-decoration: none;
+    padding-right: 15px;
+    padding-left: 0px;
+}
+
+.r_header_item:hover {
+    text-decoration: underline;
+}
+
+.profile_container {
+    opacity: 1;
+    width: 32px;
+    height: 32px;
+    padding-left: 0px;
+    justify-content: center;
+    transform: translateY(-30%);
+}
+
+.profile {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    justify-content: center;
+    padding-left: 0px;
+}
+
+.square_grid_container {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    transform: translateY(-20%);
+}
+
+.square_grid {
+    display: grid;
+    position: relative;
+    grid-template-columns: 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px;
+    transform: scale(0.1) translateY(-445%) translateX(-7px);
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.square {
+    color:#000;
+    background-color: #000;
+    margin: 20px;
+    width: 40px;
+    height: 40px;
 }
 
 .page_center {
@@ -60,6 +125,7 @@ a {
     cursor: pointer;
     color:  rgb(66, 133, 244);
     fill:  rgb(66, 133, 244);
+    opacity: 1;
 }
 
 svg {
@@ -174,6 +240,7 @@ footer {
     padding-left: 3px;
     list-style-type: none;
     min-width: 640px;
+    
 }
 
 .l_footer_item {
@@ -204,4 +271,5 @@ footer {
 
 .footer_text {
     font-size: 14px;
+    color: #70757a;
 }
